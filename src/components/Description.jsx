@@ -6,22 +6,22 @@ function Description() {
   return (
     <section className="description" id="productos">
       <div className="description__logo" aria-hidden="true">
-        <img src={descriptionLogo} alt="Símbolo floral de orquidea print" />
+        <img src={descriptionLogo} alt="Símbolo floral de orquídea print" />
       </div>
       <div className="description__text">
-        <p className="description__eyebrow">productos</p>
         <p>
-          En orquídea print convertimos tus ideas en objetos reales.
+          En <strong>orquídea print</strong> convertimos tus ideas en objetos reales.
         </p>
         <p>
-          Creamos desde figuras, juguetes y utensilios hasta productos empresariales como llaveros, pines,
-          señaléticas y tarjetas de presentación, totalmente personalizadas y con la opción de integrar tecnología
-          NFC.
+          Creamos desde <strong>figuras, juguetes y utensilios</strong> hasta productos empresariales como{' '}
+          <strong>llaveros</strong>, <strong>pines</strong>,{' '}
+          <strong>señaléticas y tarjetas de presentación</strong>, totalmente personalizadas y con la opción de
+          integrar <strong>tecnología NFC</strong>.
         </p>
       </div>
       <div className="description__keychains" aria-hidden="true">
-        <img src={blackKeychain} alt="Llavero oscuro" className="keychain keychain--top" />
-        <img src={whiteKeychain} alt="Llavero claro" className="keychain keychain--bottom" />
+        <img src={whiteKeychain} alt="Llavero claro" className="keychain keychain--top" />
+        <img src={blackKeychain} alt="Llavero oscuro" className="keychain keychain--bottom" />
       </div>
     </section>
   )
