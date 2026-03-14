@@ -1,4 +1,4 @@
-import heroVideo from '../assets/inicio/Articulated Dragon 3D Print Time Lapse with Closeup Lens.mp4'
+import heroVideo from '../assets/inicio/inicio.MOV'
 import Navbar from './Navbar'
 
 function Hero() {

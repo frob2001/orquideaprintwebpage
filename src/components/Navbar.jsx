@@ -11,7 +11,7 @@ function Navbar() {
         <span>orquidea print</span>
       </div>
       <button
-        className="navbar__toggle"
+        className={`navbar__toggle ${isOpen ? 'navbar__toggle--open' : ''}`}
         type="button"
         aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
         aria-expanded={isOpen}
