@@ -24,7 +24,7 @@ function Navbar() {
         <span />
       </button>
       <nav className="navbar__links" id="navbar-links">
-        <a href="#inicio" onClick={closeMenu}>inicio</a>
+        <a href="#quienes-somos" onClick={closeMenu}>inicio</a>
         <a href="#productos" onClick={closeMenu}>productos</a>
         <a href="#quienes-somos" onClick={closeMenu}>&iquest;quienes somos?</a>
         <a href="#contacto" onClick={closeMenu}>contactanos</a>
