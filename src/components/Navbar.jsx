@@ -3,13 +3,14 @@ import navbarLogo from '../assets/inicio/logo.png'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const closeMenu = () => setIsOpen(false)
 
   return (
     <header className={`navbar ${isOpen ? 'navbar--open' : ''}`}>
-      <div className="navbar__brand">
+      <a className="navbar__brand" href="#inicio" onClick={closeMenu}>
         <img src={navbarLogo} alt="Logo de orquidea print" />
         <span>orquidea print</span>
-      </div>
+      </a>
       <button
         className={`navbar__toggle ${isOpen ? 'navbar__toggle--open' : ''}`}
         type="button"
@@ -23,10 +24,10 @@ function Navbar() {
         <span />
       </button>
       <nav className="navbar__links" id="navbar-links">
-        <a href="#inicio">inicio</a>
-        <a href="#productos">productos</a>
-        <a href="#quienes-somos">&iquest;quienes somos?</a>
-        <a href="#contacto">contactanos</a>
+        <a href="#inicio" onClick={closeMenu}>inicio</a>
+        <a href="#productos" onClick={closeMenu}>productos</a>
+        <a href="#quienes-somos" onClick={closeMenu}>&iquest;quienes somos?</a>
+        <a href="#contacto" onClick={closeMenu}>contactanos</a>
       </nav>
     </header>
   )

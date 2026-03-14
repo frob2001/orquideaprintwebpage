@@ -5,6 +5,16 @@
   background-color: #0f0f0f;
 }
 
+html {
+  scroll-padding-top: 7rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
