@@ -15,7 +15,7 @@ function Hero() {
 
       <div className="hero__content">
         <p className="hero__title">
-          damos <br /> forma a <br /> tu imaginación.
+          damos <br /> forma a <br /> tu imaginación
         </p>
       </div>
     </section>
