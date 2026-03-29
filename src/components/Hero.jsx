@@ -1,4 +1,4 @@
-import heroVideo from '../assets/inicio/inicio.MOV'
+import heroVideo from '../assets/inicio/inicio.mp4'
 
 function Hero() {
   return (
