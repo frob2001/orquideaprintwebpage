@@ -42,12 +42,12 @@ function Description() {
       <div className="description__inner">
         <div className="description__text">
           <p className="description__intro">
-            En <strong>orqu&iacute;dea print</strong> convertimos tus ideas en objetos reales.
+            en <strong>orqu&iacute;dea print</strong> convertimos tus ideas en objetos reales.
           </p>
           <p className="description__copy">
-            Creamos desde <strong>figuras, juguetes y utensilios</strong> hasta productos empresariales como{' '}
+            creamos desde <strong>figuras, juguetes y utensilios</strong> hasta productos empresariales como{' '}
             <strong>llaveros, pines, se&ntilde;al&eacute;ticas y tarjetas de presentaci&oacute;n</strong>,
-            totalmente personalizadas y con la opci&oacute;n de integrar <strong>tecnolog&iacute;a NFC</strong>.
+            totalmente personalizadas y con la opci&oacute;n de integrar <strong>tecnolog&iacute;a nfc</strong>.
           </p>
         </div>
       </div>

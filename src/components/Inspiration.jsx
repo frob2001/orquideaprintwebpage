@@ -44,9 +44,9 @@ function PlatformModal({ platform, onClose }) {
         {/* Logo + nombre */}
         <div className="platform-modal__hero">
           <img src={platform.img} alt={platform.label} className="platform-modal__logo" />
-          <h2 className="platform-modal__name">{platform.label}</h2>
+          <h2 className="platform-modal__name">{platform.label.toLowerCase()}</h2>
           <p className="platform-modal__hint">
-            Abre el catálogo, encuentra lo que te gusta,<br />
+            abre el catálogo, encuentra lo que te gusta,<br />
             copia el link y pégalo abajo para cotizar.
           </p>
           <a
@@ -55,7 +55,7 @@ function PlatformModal({ platform, onClose }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            explorar {platform.label} →
+            explorar {platform.label.toLowerCase()} →
           </a>
         </div>
 
@@ -117,11 +117,11 @@ function Inspiration() {
       >
         <div className="inspiration__inner">
           <h2 className="inspiration__title" id="inspiration-title">
-            ¿Tienes una idea en mente pero no sabes cómo hacerla realidad?
+            ¿tienes una idea en mente pero no sabes cómo hacerla realidad?
           </h2>
           <p className="inspiration__copy">
-            Inspírate en los catálogos de modelos 3D más populares del mundo.<br />
-            Encuentra figuras, accesorios y objetos únicos… ¡nosotros los imprimimos por ti!
+            inspírate en los catálogos de modelos 3D más populares del mundo.<br />
+            encuentra figuras, accesorios y objetos únicos… ¡nosotros los imprimimos por ti!
           </p>
           <ul className="inspiration__platforms">
             {platforms.map((p) => (
