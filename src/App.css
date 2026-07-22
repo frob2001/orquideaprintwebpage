@@ -356,6 +356,21 @@
   background: #ffffff;
 }
 
+.products__pricing {
+  margin: 0;
+  padding: clamp(1rem, 2vw, 1.4rem) clamp(1.5rem, 5vw, 4rem);
+  background: #fdeef4;
+  color: #6b2547;
+  text-align: center;
+  font-size: clamp(0.85rem, 1.1vw, 0.98rem);
+  line-height: 1.6;
+}
+
+.products__pricing strong {
+  font-weight: 800;
+  color: #93215d;
+}
+
 .product-line {
   padding: clamp(2.5rem, 4vw, 4rem) clamp(1.5rem, 5vw, 4rem);
 }

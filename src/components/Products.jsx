@@ -17,13 +17,15 @@ const lines = [
     theme: 'light',
     accent: '#a02168',
     title: 'hogar',
-    description: 'organizadores y complementos minimalistas para tus espacios — piezas funcionales que ordenan y decoran tu casa.',
+    description: 'organizadores, adornos y decoración para el hogar — desde placas de identificación para mascotas hasta piezas funcionales que ordenan y decoran tu casa.',
     images: [
       { srcs: [hogarCathouse1, hogarCathouse2], alt: 'Casa para gato impresa en 3D' },
       { srcs: [hogarOrganizador1, hogarOrganizador2], alt: 'Organizador de baño impreso en 3D' },
       { srcs: [hogarPortavasos1, hogarPortavasos2, hogarPortavasos3], alt: 'Portavasos con forma de hoja impresos en 3D' },
     ],
     items: [
+      'placas de identificación para mascotas.',
+      'adornos y decoración para el hogar.',
       'portallaves de pared.',
       'saleros, pimenteros y servilleteros.',
       'organizadores de cubiertos y hueveras.',
@@ -37,16 +39,18 @@ const lines = [
     theme: 'dark',
     accent: '#ffffff',
     title: 'negocios',
-    description: 'artículos corporativos e interactivos con tecnología qr y nfc que llevan tu marca a otro nivel.',
+    description: 'regalos corporativos personalizados y artículos de marketing con tecnología qr y nfc que llevan tu marca a otro nivel — precio especial al por mayor para pedidos de empresas.',
     images: [
       { src: productBadges, alt: 'Gafetes interactivos con QR y NFC' },
       { src: productKeychains, alt: 'Llaveros con QR y NFC' },
       { src: productPins, alt: 'Pines con logotipo' },
     ],
     items: [
+      'regalos corporativos y artículos promocionales personalizados.',
       'porta celulares de escritorio con qr/nfc.',
-      'llaveros y pines con tu logotipo.',
+      'llaveros personalizados y pines con tu logotipo.',
       'gafetes interactivos para eventos.',
+      'precio al por mayor para pedidos de empresas.',
     ],
     helper: '¿tu negocio necesita otra idea? cuéntanosla y la fabricamos.',
   },
@@ -55,13 +59,14 @@ const lines = [
     theme: 'light',
     accent: '#d52574',
     title: 'personalizados',
-    description: 'tus figuras, pasatiempos y proyectos cobrando vida — desde coleccionables hasta prototipos únicos.',
+    description: 'juguetes, figuras y proyectos cobrando vida — desde coleccionables hasta prototipos únicos, impresos bajo demanda.',
     images: [
       { placeholder: 'figuras coleccionables' },
       { placeholder: 'litofanías' },
       { placeholder: 'prototipos y piezas' },
     ],
     items: [
+      'juguetes y figuras personalizadas.',
       'figuras coleccionables (cine, series, anime, videojuegos).',
       'litofanías (fotos impresas en 3d que revelan luz).',
       'prototipos y piezas mecánicas.',
@@ -106,6 +111,13 @@ function ProductLine({ id, theme, accent, title, description, images, items, hel
 function Products() {
   return (
     <section className="products" id="productos" aria-label="productos">
+      <p className="products__pricing">
+        impresión 3d bajo demanda en <strong>quito, guayaquil y cuenca</strong> — llaveros personalizados,
+        regalos corporativos, placas para mascotas y juguetes en 3d. desde <strong>$2.50 la hora</strong> +{' '}
+        <strong>$0.30 por gramo</strong> (cotización según el modelo, precio no fijo). precio especial al por
+        mayor · pagos con tarjeta de crédito.
+      </p>
+
       {lines.map((line) => (
         <ProductLine key={line.id} {...line} />
       ))}
