@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa6'
 import logo from '../assets/inicio/logo.png'
+import { lines } from '../data/productLines'
 
 const waHref = `https://wa.me/?text=${encodeURIComponent('Hola! Quiero más información sobre orquídea print.')}`
 
@@ -10,17 +12,13 @@ const socialLinks = [
 ]
 
 const navLinks = [
-  { label: 'inicio', href: '#inicio' },
-  { label: 'productos', href: '#productos' },
-  { label: '¿quiénes somos?', href: '#quienes-somos' },
-  { label: 'contáctanos', href: '#contacto' },
+  { label: 'inicio', to: '/#inicio' },
+  { label: 'productos', to: '/#productos' },
+  { label: '¿quiénes somos?', to: '/#quienes-somos' },
+  { label: 'contáctanos', to: '/#contacto' },
 ]
 
-const productLinks = [
-  { label: 'hogar', href: '#hogar' },
-  { label: 'negocios', href: '#negocios' },
-  { label: 'personalizados', href: '#personalizados' },
-]
+const productLinks = lines.map((line) => ({ label: line.title, to: line.path }))
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -30,10 +28,10 @@ function Footer() {
       <div className="footer__inner">
         <div className="footer__top">
           <div className="footer__brand">
-            <a className="footer__brand-mark" href="#inicio">
+            <Link className="footer__brand-mark" to="/#inicio">
               <img src={logo} alt="Logo de orquídea print" />
               <span>orquídea print</span>
-            </a>
+            </Link>
             <p>
               impresión 3d personalizada y ecofriendly — desde figuras, juguetes y utensilios hasta llaveros,
               pines y soluciones para tu negocio con tecnología nfc.
@@ -54,7 +52,7 @@ function Footer() {
             <ul>
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href}>{link.label}</a>
+                  <Link to={link.to}>{link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -65,7 +63,7 @@ function Footer() {
             <ul>
               {productLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href}>{link.label}</a>
+                  <Link to={link.to}>{link.label}</Link>
                 </li>
               ))}
             </ul>

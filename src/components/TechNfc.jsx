@@ -1,5 +1,5 @@
 import logo from '../assets/inicio/logo.png'
-import badgeImage from '../assets/productos/gafete.png'
+import nfcImage from '../assets/nfc.png'
 
 function ChipIcon() {
   return (
@@ -30,7 +30,7 @@ function TechNfc() {
         </div>
         <div className="tech-nfc__visual">
           <div className="tech-nfc__photo">
-            <img src={badgeImage} alt="Gafete con QR y NFC" />
+            <img src={nfcImage} alt="Celular acercándose a una pieza impresa en 3D con punto NFC integrado" />
           </div>
           <div className="tech-nfc__chip">
             <span className="tech-nfc__chip-icon">
