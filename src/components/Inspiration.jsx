@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { buildWhatsappLink } from '../data/contact'
 import imgMakerWorld from '../assets/paginas/makerworld.png'
 import imgPrintables from '../assets/paginas/printables.png'
 import imgThingiverse from '../assets/paginas/thingiverse.png'
@@ -24,8 +25,7 @@ function PlatformModal({ platform, onClose }) {
   const handleSend = (e) => {
     e.preventDefault()
     if (!link.trim()) return
-    const msg = encodeURIComponent(`Hola! Me interesa que me coticen este modelo: ${link.trim()}`)
-    window.open(`https://wa.me/?text=${msg}`, '_blank', 'noopener')
+    window.open(buildWhatsappLink(`Hola! Me interesa que me coticen este modelo: ${link.trim()}`), '_blank', 'noopener')
     setSent(true)
     setLink('')
     setTimeout(() => setSent(false), 3000)
@@ -94,23 +94,22 @@ function PlatformModal({ platform, onClose }) {
 function Inspiration() {
   const [active, setActive] = useState(null)
   const [visible, setVisible] = useState(false)
-  const sectionRef = useRef(null)
+  const wordmarkRef = useRef(null)
 
   useEffect(() => {
-    const section = sectionRef.current
-    if (!section) return
+    const el = wordmarkRef.current
+    if (!el) return
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setVisible(true) },
+      ([entry]) => { setVisible(entry.isIntersecting) },
       { threshold: 0.15 }
     )
-    observer.observe(section)
+    observer.observe(el)
     return () => observer.disconnect()
   }, [])
 
   return (
     <>
       <section
-        ref={sectionRef}
         className={`inspiration${visible ? ' inspiration--visible' : ''}`}
         id="inspiracion"
         aria-labelledby="inspiration-title"
@@ -120,8 +119,8 @@ function Inspiration() {
             ¿tienes una idea en mente pero no sabes cómo hacerla realidad?
           </h2>
           <p className="inspiration__copy">
-            inspírate en los catálogos de modelos 3D más populares del mundo.<br />
-            encuentra figuras, accesorios y objetos únicos… ¡nosotros los imprimimos por ti!
+            inspírate en los catálogos de modelos 3D más populares del mundo.
+            <span className="inspiration__copy-extra"><br />encuentra figuras, accesorios y objetos únicos… ¡nosotros los imprimimos por ti!</span>
           </p>
           <ul className="inspiration__platforms">
             {platforms.map((p) => (
@@ -137,7 +136,7 @@ function Inspiration() {
             ))}
           </ul>
         </div>
-        <span className="inspiration__wordmark" aria-hidden="true">print</span>
+        <span ref={wordmarkRef} className="inspiration__wordmark" aria-hidden="true">print</span>
       </section>
 
       {active && <PlatformModal platform={active} onClose={() => setActive(null)} />}

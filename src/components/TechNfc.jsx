@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import logo from '../assets/inicio/logo.png'
 import nfcImage from '../assets/nfc.png'
 
@@ -12,20 +13,41 @@ function ChipIcon() {
 }
 
 function TechNfc() {
+  const [visible, setVisible] = useState(false)
+  const wordmarkRef = useRef(null)
+
+  useEffect(() => {
+    const el = wordmarkRef.current
+    if (!el) return undefined
+    const observer = new IntersectionObserver(
+      ([entry]) => { setVisible(entry.isIntersecting) },
+      { threshold: 0.15 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section className="tech-nfc" aria-labelledby="nfc-title">
-      <span className="tech-nfc__watermark" aria-hidden="true">nfc</span>
+    <section
+      className={`tech-nfc${visible ? ' tech-nfc--visible' : ''}`}
+      aria-labelledby="nfc-title"
+    >
+      <span ref={wordmarkRef} className="tech-nfc__watermark" aria-hidden="true">nfc</span>
       <div className="tech-nfc__inner">
         <div className="tech-nfc__copy">
           <div className="tech-nfc__eyebrow">
-            <img src={logo} alt="" />
+            <img src={logo} alt="" className="tech-nfc__eyebrow-logo" />
             <h2 id="nfc-title">tecnología nfc</h2>
           </div>
-          <p>
+          <p className="tech-nfc__desc-full">
             integramos tecnología nfc directamente dentro de impresiones 3d, permitiendo que cualquier objeto
             impreso actúe como un punto de contacto inteligente. simplemente acerca tu smartphone y el objeto
             desbloqueará acciones personalizadas: abrir enlaces, mostrar información, validar accesos, activar
             automatizaciones o conectar con tu marca.
+          </p>
+          <p className="tech-nfc__desc-short">
+            cualquier objeto como punto de contacto inteligente: solo acerca tu smartphone y comparte enlaces,
+            muestra información, valida accesos, activa automatizaciones o conecta con tu marca.
           </p>
         </div>
         <div className="tech-nfc__visual">
@@ -36,7 +58,8 @@ function TechNfc() {
             <span className="tech-nfc__chip-icon">
               <ChipIcon />
             </span>
-            <p>un pequeño chip nfc integrado convierte cualquier pieza en un objeto conectado.</p>
+            <p className="tech-nfc__chip-text-full">un pequeño chip nfc integrado convierte cualquier pieza en un objeto conectado.</p>
+            <p className="tech-nfc__chip-text-short">un pequeño chip nfc conecta tu producto.</p>
           </div>
         </div>
       </div>

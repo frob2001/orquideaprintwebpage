@@ -1,3 +1,5 @@
+import { buildWhatsappLink } from '../data/contact'
+
 function WhatsappIcon() {
   return (
     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -41,7 +43,7 @@ const channels = [
   {
     id: 'whatsapp',
     label: 'WhatsApp',
-    href: `https://wa.me/?text=${encodeURIComponent('Hola! Quiero más información sobre orquídea print.')}`,
+    href: buildWhatsappLink('Hola! Quiero más información sobre orquídea print.'),
     Icon: WhatsappIcon,
   },
   {

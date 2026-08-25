@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/inicio/logo.png'
 import { lines } from '../data/productLines'
 import MediaSlot from '../components/MediaSlot'
 import Footer from '../components/Footer'
@@ -32,14 +31,6 @@ function LineaPage({ lineId }) {
     <div className="linea-page">
       <div className={`product-line product-line--${theme} product-line--${id}`} style={{ '--line-accent': accent }}>
         <div className="product-line__inner">
-          <div className="product-line__eyebrow">
-            <span
-              className="product-line__eyebrow-icon"
-              style={{ WebkitMaskImage: `url(${logo})`, maskImage: `url(${logo})` }}
-              aria-hidden="true"
-            />
-            <span className="product-line__eyebrow-label">línea</span>
-          </div>
           <h1 className="product-line__title">{title}</h1>
           <p className="product-line__desc">{description}</p>
           <div className="product-line__grid">

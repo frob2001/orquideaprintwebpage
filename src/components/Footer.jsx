@@ -2,20 +2,14 @@ import { Link } from 'react-router-dom'
 import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa6'
 import logo from '../assets/inicio/logo.png'
 import { lines } from '../data/productLines'
+import { buildWhatsappLink } from '../data/contact'
 
-const waHref = `https://wa.me/?text=${encodeURIComponent('Hola! Quiero más información sobre orquídea print.')}`
+const waHref = buildWhatsappLink('Hola! Quiero más información sobre orquídea print.')
 
 const socialLinks = [
   { id: 'whatsapp', label: 'WhatsApp', href: waHref, Icon: FaWhatsapp },
   { id: 'instagram', label: 'Instagram', href: 'https://instagram.com', Icon: FaInstagram },
   { id: 'linkedin', label: 'LinkedIn', href: 'https://linkedin.com', Icon: FaLinkedin },
-]
-
-const navLinks = [
-  { label: 'inicio', to: '/#inicio' },
-  { label: 'productos', to: '/#productos' },
-  { label: '¿quiénes somos?', to: '/#quienes-somos' },
-  { label: 'contáctanos', to: '/#contacto' },
 ]
 
 const productLinks = lines.map((line) => ({ label: line.title, to: line.path }))
@@ -48,17 +42,6 @@ function Footer() {
           </div>
 
           <div className="footer__col">
-            <h3>navegación</h3>
-            <ul>
-              {navLinks.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.to}>{link.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer__col">
             <h3>productos</h3>
             <ul>
               {productLinks.map((link) => (
@@ -83,7 +66,7 @@ function Footer() {
 
         <div className="footer__bottom">
           <p>© {year} orquídea print. todos los derechos reservados.</p>
-          <p className="footer__tag">impresión 3d ecofriendly, hecha con pla de origen vegetal.</p>
+          <p className="footer__tag">hecho con pla de origen vegetal.</p>
         </div>
       </div>
     </footer>

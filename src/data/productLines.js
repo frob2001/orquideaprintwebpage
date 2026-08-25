@@ -8,10 +8,11 @@ import hogarOrganizador2 from '../assets/productos/hogar/organizador/2.webp'
 import hogarPortavasos1 from '../assets/productos/hogar/portavasos/1.webp'
 import hogarPortavasos2 from '../assets/productos/hogar/portavasos/2.webp'
 import hogarPortavasos3 from '../assets/productos/hogar/portavasos/3.webp'
+import { buildWhatsappLink } from './contact'
 
 export const stats = [
   { value: 'desde $2.50 / hora', label: '+ $0.30 por gramo, según el modelo' },
-  { value: 'envíos a todo ecuador', label: 'no importa si vives en quito, guayaquil, cuenca o cualquier ciudad del ecuador, llegamos a ti.' },
+  { value: 'envíos a todo Ecuador', label: 'no importa si vives en quito, guayaquil, cuenca o cualquier ciudad del Ecuador, llegamos a ti.' },
   { value: 'impresión bajo demanda', label: 'imprimimos solo lo que pides, sin desperdicio' },
   { value: 'transferencia, débito o crédito', label: 'aceptamos pagos por transferencia bancaria o con tarjeta, como prefieras.' },
 ]
@@ -46,8 +47,8 @@ export const lines = [
   {
     id: 'negocios',
     path: '/marketing',
-    theme: 'dark',
-    accent: '#ffffff',
+    theme: 'light',
+    accent: '#93215d',
     title: 'marketing',
     tagline: 'regalos corporativos y artículos con qr y nfc',
     description: 'regalos corporativos y artículos de marketing con tecnología qr y nfc — perfectos para llevar tu marca a otro nivel, con precios especiales al por mayor.',
@@ -69,7 +70,7 @@ export const lines = [
       title: '¿sabías que tus llaveros pueden llevar tecnología nfc?',
       text: 'acerca el celular y comparte tu contacto, tus redes o tu catálogo al instante — ideal para networking, ferias y regalos corporativos.',
       buttonLabel: 'cotizar llavero nfc →',
-      href: `https://wa.me/?text=${encodeURIComponent('Hola! Quiero cotizar llaveros personalizados con NFC para mi negocio.')}`,
+      href: buildWhatsappLink('Hola! Quiero cotizar llaveros personalizados con NFC para mi negocio.'),
     },
     metaTitle: 'línea marketing | regalos corporativos con qr y nfc — orquídea print',
     metaDescription: 'llaveros personalizados, regalos corporativos y artículos de marketing con qr y nfc. precio al por mayor para empresas en quito, guayaquil y cuenca.',

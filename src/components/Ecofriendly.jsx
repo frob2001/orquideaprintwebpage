@@ -2,6 +2,7 @@ import leafIcon from '../assets/leafes.png'
 import ecoMasorca from '../assets/ecofriendly/masorca.png'
 import ecoColores from '../assets/ecofriendly/colores.png'
 import MediaSlot from './MediaSlot'
+import FoldText from './FoldText'
 
 const rows = [
   {
@@ -38,7 +39,14 @@ function Ecofriendly() {
       <div className="ecofriendly__inner">
         <div className="ecofriendly__head">
           <h2 className="ecofriendly__head-title" id="eco-title">
-            ecofriendly
+            <FoldText
+              text="ecofriendly"
+              trigger="scroll"
+              fontSize="clamp(2.2rem, 4.2vw, 3.4rem)"
+              fontWeight={800}
+              color="#0f0f0f"
+              creaseShading={0}
+            />
             <img src={leafIcon} alt="" />
           </h2>
           <p className="ecofriendly__lead">
