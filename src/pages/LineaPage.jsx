@@ -30,14 +30,6 @@ function LineaPage({ lineId }) {
 
   return (
     <div className="linea-page">
-      <header className="linea-page__topbar">
-        <Link to="/" className="linea-page__brand">
-          <img src={logo} alt="" />
-          <span>orquídea print</span>
-        </Link>
-        <Link to="/#productos" className="linea-page__back">← todas las líneas</Link>
-      </header>
-
       <div className={`product-line product-line--${theme} product-line--${id}`} style={{ '--line-accent': accent }}>
         <div className="product-line__inner">
           <div className="product-line__eyebrow">

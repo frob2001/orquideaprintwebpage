@@ -25,7 +25,6 @@ function Home() {
 
   return (
     <>
-      <Navbar />
       <Hero />
       <Description />
       <Products />
@@ -45,6 +44,7 @@ function App() {
   return (
     <div className="app">
       {loading && <LoadingScreen onDone={() => setLoading(false)} />}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hogar" element={<LineaPage lineId="hogar" />} />

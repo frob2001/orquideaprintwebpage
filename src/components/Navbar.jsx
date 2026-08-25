@@ -1,4 +1,5 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import navbarLogo from '../assets/inicio/logo.png'
 
 function Navbar() {
@@ -7,10 +8,10 @@ function Navbar() {
 
   return (
     <header className={`navbar ${isOpen ? 'navbar--open' : ''}`}>
-      <a className="navbar__brand" href="#inicio" onClick={closeMenu}>
+      <Link className="navbar__brand" to="/" onClick={closeMenu}>
         <img src={navbarLogo} alt="Logo de orquidea print" />
         <span>orquidea print</span>
-      </a>
+      </Link>
       <button
         className={`navbar__toggle ${isOpen ? 'navbar__toggle--open' : ''}`}
         type="button"
@@ -24,10 +25,10 @@ function Navbar() {
         <span />
       </button>
       <nav className="navbar__links" id="navbar-links">
-        <a href="#quienes-somos" onClick={closeMenu}>inicio</a>
-        <a href="#productos" onClick={closeMenu}>productos</a>
-        <a href="#quienes-somos" onClick={closeMenu}>&iquest;quienes somos?</a>
-        <a href="#contacto" onClick={closeMenu}>contactanos</a>
+        <Link to="/" onClick={closeMenu}>inicio</Link>
+        <Link to="/hogar" onClick={closeMenu}>hogar</Link>
+        <Link to="/marketing" onClick={closeMenu}>marketing</Link>
+        <Link to="/juguetes" onClick={closeMenu}>juguetes</Link>
       </nav>
     </header>
   )

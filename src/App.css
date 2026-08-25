@@ -499,42 +499,7 @@
   background: #ffffff;
   color: #0f0f0f;
   min-height: 100vh;
-}
-
-.linea-page__topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.4rem clamp(1.5rem, 5vw, 4rem);
-}
-
-.linea-page__brand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-transform: lowercase;
-  color: #0f0f0f;
-}
-
-.linea-page__brand img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-}
-
-.linea-page__back {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #93215d;
-  text-transform: lowercase;
-  transition: opacity 160ms ease;
-}
-
-.linea-page__back:hover {
-  opacity: 0.7;
+  padding-top: 7rem;
 }
 
 .product-line {
