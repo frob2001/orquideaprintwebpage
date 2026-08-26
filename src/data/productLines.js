@@ -15,7 +15,6 @@ import juguetesR5 from '../assets/productos/juguetes/r5-turbo.webp'
 import juguetesKonbini from '../assets/productos/juguetes/konbini.webp'
 import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
 import keychainByd from '../assets/productos/marketing/keychain-byd.webp'
-import keychainMitsubishi from '../assets/productos/marketing/keychain-mitsubishi.webp'
 import { buildWhatsappLink } from './contact'
 
 export const stats = [
@@ -64,10 +63,9 @@ export const lines = [
     cover: { srcs: [productKeychains, productBadges], alt: 'Llaveros y gafetes personalizados con QR y NFC' },
     images: [
       { src: productBadges, alt: 'Gafetes interactivos con QR y NFC' },
+      { src: keychainByd, alt: 'Llavero BYD con patrón panal impreso en 3D' },
       { src: productKeychains, alt: 'Llaveros con QR y NFC' },
       { src: productPins, alt: 'Pines con logotipo' },
-      { src: keychainByd, alt: 'Llavero BYD con patrón panal impreso en 3D' },
-      { src: keychainMitsubishi, alt: 'Llavero Mitsubishi con patrón panal impreso en 3D' },
     ],
     items: [
       'llaveros personalizados con tu logotipo.',
@@ -94,6 +92,7 @@ export const lines = [
     title: 'juguetes',
     tagline: 'figuras, coleccionables y prototipos únicos',
     description: 'juguetes, figuras y proyectos que cobran vida — desde coleccionables hasta prototipos únicos, impresos bajo demanda para ti.',
+    cover: { srcs: [juguetesSkeleton, juguetesR5, juguetesKonbini, juguetesEevee, juguetesHungary], alt: 'Figuras y coleccionables impresos en 3D' },
     images: [
       { src: juguetesSkeleton, alt: 'Figura articulada de esqueleto tipo LEGO impresa en 3D' },
       { src: juguetesEevee, alt: 'Figura coleccionable de Eevee impresa en 3D' },
