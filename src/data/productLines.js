@@ -11,6 +11,11 @@ import hogarPortavasos3 from '../assets/productos/hogar/portavasos/3.webp'
 import juguetesSkeleton from '../assets/productos/juguetes/skeleton.webp'
 import juguetesEevee from '../assets/productos/juguetes/eevee.webp'
 import juguetesRooster from '../assets/productos/juguetes/rooster.webp'
+import juguetesR5 from '../assets/productos/juguetes/r5-turbo.webp'
+import juguetesKonbini from '../assets/productos/juguetes/konbini.webp'
+import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
+import keychainByd from '../assets/productos/marketing/keychain-byd.webp'
+import keychainMitsubishi from '../assets/productos/marketing/keychain-mitsubishi.webp'
 import { buildWhatsappLink } from './contact'
 
 export const stats = [
@@ -61,6 +66,8 @@ export const lines = [
       { src: productBadges, alt: 'Gafetes interactivos con QR y NFC' },
       { src: productKeychains, alt: 'Llaveros con QR y NFC' },
       { src: productPins, alt: 'Pines con logotipo' },
+      { src: keychainByd, alt: 'Llavero BYD con patrón panal impreso en 3D' },
+      { src: keychainMitsubishi, alt: 'Llavero Mitsubishi con patrón panal impreso en 3D' },
     ],
     items: [
       'llaveros personalizados con tu logotipo.',
@@ -91,6 +98,9 @@ export const lines = [
       { src: juguetesSkeleton, alt: 'Figura articulada de esqueleto tipo LEGO impresa en 3D' },
       { src: juguetesEevee, alt: 'Figura coleccionable de Eevee impresa en 3D' },
       { src: juguetesRooster, alt: 'Figura de gallo Heihei impresa en 3D' },
+      { src: juguetesR5, alt: 'Maqueta del Renault 5 Turbo 2 impresa en 3D' },
+      { src: juguetesKonbini, alt: 'Diorama de tienda japonesa konbini impreso en 3D' },
+      { src: juguetesHungary, alt: 'Cuadro del circuito del Gran Premio de Hungría impreso en 3D' },
     ],
     items: [
       'juguetes y figuras personalizadas.',

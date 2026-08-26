@@ -839,6 +839,53 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+.product-line__inspire {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  width: 100%;
+  margin: 0 0 1.4rem;
+  padding: clamp(1.2rem, 2vw, 1.6rem);
+  border-radius: 20px;
+  text-align: left;
+  background: linear-gradient(135deg, #c43a7b 0%, #c33575 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(196, 58, 123, 0.28);
+  transition: transform 180ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 180ms ease;
+}
+
+.product-line__inspire:active {
+  transform: scale(0.98);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product-line__inspire:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(196, 58, 123, 0.36);
+  }
+}
+
+.product-line__inspire-text {
+  font-weight: 800;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.product-line__inspire-button {
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: #ffffff;
+  color: #c33575;
+  transition: transform 160ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.product-line__inspire:active .product-line__inspire-button {
+  transform: scale(0.96);
+}
+
 .inspiration {
   position: relative;
   overflow: hidden;

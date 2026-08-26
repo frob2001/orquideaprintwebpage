@@ -55,6 +55,11 @@ function LineaPage({ lineId }) {
             </a>
           )}
 
+          <Link className="product-line__inspire" to="/#inspiracion">
+            <span className="product-line__inspire-text">¿necesitas un poco de inspiración?</span>
+            <span className="product-line__inspire-button">inspírame →</span>
+          </Link>
+
           <Link className="product-line__helper" to="/#contacto">{helper}</Link>
         </div>
       </div>
