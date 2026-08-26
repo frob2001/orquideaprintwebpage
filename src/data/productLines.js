@@ -11,7 +11,8 @@ import hogarPortavasos3 from '../assets/productos/hogar/portavasos/3.webp'
 import { buildWhatsappLink } from './contact'
 
 export const stats = [
-  { value: 'desde $2.50 / hora', label: '+ $0.30 por gramo, según el modelo' },
+  { value: 'pregunta por nuestras tarifas', label: 'para pedidos masivos o impresión 3D bajo demanda — con descuentos según el producto.' },
+  { value: 'impresión 3D para proyectos universitarios', label: 'prototipos, maquetas, piezas y modelos para tus proyectos y tesis.' },
   { value: 'envíos a todo Ecuador', label: 'no importa si vives en quito, guayaquil, cuenca o cualquier ciudad del Ecuador, llegamos a ti.' },
   { value: 'impresión bajo demanda', label: 'imprimimos solo lo que pides, sin desperdicio' },
   { value: 'transferencia, débito o crédito', label: 'aceptamos pagos por transferencia bancaria o con tarjeta, como prefieras.' },
@@ -42,7 +43,7 @@ export const lines = [
     ],
     helper: '¿buscas algo más para tu casa? creamos el diseño que nos pidas.',
     metaTitle: 'línea hogar | organizadores, adornos y placas para mascotas — orquídea print',
-    metaDescription: 'organizadores, adornos y placas de identificación para mascotas impresos en 3d en quito, guayaquil y cuenca. desde $2.50 la hora + $0.30 por gramo.',
+    metaDescription: 'organizadores, adornos y placas de identificación para mascotas impresos en 3d en quito, guayaquil y cuenca. tarifas para pedidos masivos e impresión bajo demanda, con descuentos según el producto.',
   },
   {
     id: 'negocios',
