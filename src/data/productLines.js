@@ -8,6 +8,9 @@ import hogarOrganizador2 from '../assets/productos/hogar/organizador/2.webp'
 import hogarPortavasos1 from '../assets/productos/hogar/portavasos/1.webp'
 import hogarPortavasos2 from '../assets/productos/hogar/portavasos/2.webp'
 import hogarPortavasos3 from '../assets/productos/hogar/portavasos/3.webp'
+import juguetesSkeleton from '../assets/productos/juguetes/skeleton.webp'
+import juguetesEevee from '../assets/productos/juguetes/eevee.webp'
+import juguetesRooster from '../assets/productos/juguetes/rooster.webp'
 import { buildWhatsappLink } from './contact'
 
 export const stats = [
@@ -85,9 +88,9 @@ export const lines = [
     tagline: 'figuras, coleccionables y prototipos únicos',
     description: 'juguetes, figuras y proyectos que cobran vida — desde coleccionables hasta prototipos únicos, impresos bajo demanda para ti.',
     images: [
-      { placeholder: 'figuras coleccionables' },
-      { placeholder: 'litofanías' },
-      { placeholder: 'prototipos y piezas' },
+      { src: juguetesSkeleton, alt: 'Figura articulada de esqueleto tipo LEGO impresa en 3D' },
+      { src: juguetesEevee, alt: 'Figura coleccionable de Eevee impresa en 3D' },
+      { src: juguetesRooster, alt: 'Figura de gallo Heihei impresa en 3D' },
     ],
     items: [
       'juguetes y figuras personalizadas.',
