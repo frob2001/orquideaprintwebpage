@@ -366,6 +366,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: clamp(1rem, 2.5vw, 1.8rem);
+  width: min(1800px, 100%);
+  margin: 0 auto;
   padding: 0 clamp(1.5rem, 5vw, 4rem);
 }
 
