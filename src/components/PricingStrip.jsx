@@ -24,12 +24,14 @@ function PricingStrip() {
 
   return (
     <div ref={ref} className={`pricing-strip${visible ? ' pricing-strip--visible' : ''}`}>
-      {stats.map((stat, i) => (
-        <div key={stat.value} className="pricing-strip__item" style={{ '--stagger': `${i * 70}ms` }}>
-          <p className="pricing-strip__value">{stat.value}</p>
-          <p className="pricing-strip__label">{stat.label}</p>
-        </div>
-      ))}
+      <div className="pricing-strip__grid">
+        {stats.map((stat, i) => (
+          <div key={stat.value} className="pricing-strip__item" style={{ '--stagger': `${i * 70}ms` }}>
+            <p className="pricing-strip__value">{stat.value}</p>
+            <p className="pricing-strip__label">{stat.label}</p>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
