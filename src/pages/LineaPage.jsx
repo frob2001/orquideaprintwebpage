@@ -25,13 +25,13 @@ function LineaPage({ lineId }) {
 
   if (!line) return null
 
-  const { theme, id, accent, title, description, images, items, helper, cta } = line
+  const { theme, id, accent, title, heading, description, images, items, helper, cta } = line
 
   return (
     <div className="linea-page">
       <div className={`product-line product-line--${theme} product-line--${id}`} style={{ '--line-accent': accent }}>
         <div className="product-line__inner">
-          <h1 className="product-line__title">{title}</h1>
+          <h1 className="product-line__title">{heading ?? title}</h1>
           <p className="product-line__desc">{description}</p>
           <div className="product-line__grid">
             {images.map((image, i) => (
