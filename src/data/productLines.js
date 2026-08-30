@@ -17,6 +17,8 @@ import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
 import keychainByd from '../assets/productos/marketing/keychain-byd.webp'
 import keychainSocial from '../assets/productos/llaveros/social-keychains.webp'
 import keychainWorldcup from '../assets/productos/llaveros/worldcup-keychain.webp'
+import keychainOrquidea from '../assets/productos/llaveros/orquidea-keychains.webp'
+import keychainPmv from '../assets/productos/llaveros/pmv-keychains.webp'
 import keychainBlack from '../assets/descripcion/black_kaychain.png'
 import keychainWhite from '../assets/descripcion/white_keychain_key.png'
 import precioLlaverosSimple from '../assets/precios/llaveros-simple.webp'
@@ -218,6 +220,8 @@ export const lines = [
     images: [
       { src: keychainSocial, alt: 'Llaveros de logos de redes sociales y apps impresos en 3D' },
       { src: keychainWorldcup, alt: 'Llavero de la copa del mundo impreso en 3D' },
+      { src: keychainOrquidea, alt: 'Llaveros de orquídea en blanco y negro impresos en 3D' },
+      { src: keychainPmv, alt: 'Llaveros personalizados con logo P>MV impresos en 3D' },
       { src: productKeychains, alt: 'Llaveros personalizados con QR y NFC en Quito' },
       { src: keychainBlack, alt: 'Llavero negro personalizado impreso en 3D' },
       { src: keychainWhite, alt: 'Llavero blanco con forma de llave impreso en 3D' },
