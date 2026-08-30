@@ -15,6 +15,8 @@ import juguetesR5 from '../assets/productos/juguetes/r5-turbo.webp'
 import juguetesKonbini from '../assets/productos/juguetes/konbini.webp'
 import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
 import keychainByd from '../assets/productos/marketing/keychain-byd.webp'
+import keychainBlack from '../assets/descripcion/black_kaychain.png'
+import keychainWhite from '../assets/descripcion/white_keychain_key.png'
 import { buildWhatsappLink } from './contact'
 
 export const stats = [
@@ -83,6 +85,39 @@ export const lines = [
     },
     metaTitle: 'línea marketing | regalos corporativos con qr y nfc — orquídea print',
     metaDescription: 'llaveros personalizados, regalos corporativos y artículos de marketing con qr y nfc. precio al por mayor para empresas en quito, guayaquil y cuenca.',
+  },
+  {
+    id: 'llaveros',
+    path: '/llaveros',
+    theme: 'light',
+    accent: '#b81d6f',
+    title: 'llaveros',
+    tagline: 'llaveros personalizados con qr y nfc en quito',
+    description: 'llaveros personalizados impresos en 3d en quito, con envíos a todo ecuador — con tu nombre, tu logo, tu marca favorita o tecnología qr y nfc. ideales para regalos, autos, empresas y colecciones, con precios especiales al por mayor.',
+    cover: { srcs: [productKeychains, keychainByd, keychainBlack], alt: 'Llaveros personalizados impresos en 3D en Quito' },
+    images: [
+      { src: productKeychains, alt: 'Llaveros personalizados con QR y NFC en Quito' },
+      { src: keychainByd, alt: 'Llavero BYD con patrón panal impreso en 3D' },
+      { src: keychainBlack, alt: 'Llavero negro personalizado impreso en 3D' },
+      { src: keychainWhite, alt: 'Llavero blanco con forma de llave impreso en 3D' },
+      { src: productPins, alt: 'Pines y llaveros con logotipo' },
+    ],
+    items: [
+      'llaveros personalizados con tu nombre, logo o diseño.',
+      'llaveros con código qr y chip nfc: comparte tu contacto o redes con un toque.',
+      'llaveros de autos, marcas y colecciones (byd, mitsubishi y más).',
+      'llaveros corporativos y promocionales al por mayor.',
+      'entregas en quito y envíos a todo ecuador.',
+    ],
+    helper: '¿tienes una idea de llavero en mente? cuéntanosla y la fabricamos.',
+    cta: {
+      title: '¿sabías que tus llaveros pueden llevar tecnología nfc?',
+      text: 'acerca el celular y comparte tu contacto, tus redes o tu catálogo al instante — ideal para networking, ferias y regalos corporativos.',
+      buttonLabel: 'cotizar llavero nfc →',
+      href: buildWhatsappLink('Hola! Quiero cotizar llaveros personalizados en Quito.'),
+    },
+    metaTitle: 'llaveros personalizados en quito y ecuador | qr y nfc — orquídea print',
+    metaDescription: 'llaveros personalizados impresos en 3d en quito con envíos a todo ecuador. llaveros con qr y nfc, para autos, marcas, empresas y regalos. cotiza gratis por whatsapp.',
   },
   {
     id: 'personalizados',

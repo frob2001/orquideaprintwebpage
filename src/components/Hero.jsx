@@ -14,6 +14,9 @@ function Hero() {
       <div className="hero__gradient" aria-hidden="true" />
 
       <div className="hero__content">
+        <h1 className="sr-only">
+          Impresión 3D en Quito y todo Ecuador — llaveros personalizados, regalos corporativos y más | orquídea print
+        </h1>
         <p className="hero__title">
           damos <br /> forma a <br /> tu imaginación
         </p>

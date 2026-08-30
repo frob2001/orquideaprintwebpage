@@ -49,6 +49,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/hogar" element={<LineaPage lineId="hogar" />} />
         <Route path="/marketing" element={<LineaPage lineId="negocios" />} />
+        <Route path="/llaveros" element={<LineaPage lineId="llaveros" />} />
         <Route path="/juguetes" element={<LineaPage lineId="personalizados" />} />
       </Routes>
     </div>

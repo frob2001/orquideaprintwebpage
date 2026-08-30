@@ -28,6 +28,7 @@ function Navbar() {
         <Link to="/" onClick={closeMenu}>inicio</Link>
         <Link to="/hogar" onClick={closeMenu}>hogar</Link>
         <Link to="/marketing" onClick={closeMenu}>marketing</Link>
+        <Link to="/llaveros" onClick={closeMenu}>llaveros</Link>
         <Link to="/juguetes" onClick={closeMenu}>juguetes</Link>
       </nav>
     </header>
