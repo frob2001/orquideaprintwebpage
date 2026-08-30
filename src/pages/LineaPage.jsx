@@ -34,13 +34,6 @@ function LineaPage({ lineId }) {
         <div className="product-line__inner">
           <h1 className="product-line__title">{heading ?? title}</h1>
           <p className="product-line__desc">{description}</p>
-          {!pricing && (
-            <div className="product-line__grid">
-              {images.map((image, i) => (
-                <MediaSlot key={i} image={image} className="product-slot" />
-              ))}
-            </div>
-          )}
           <ul className="product-line__list">
             {items.map((item) => (
               <li key={item}>
@@ -49,6 +42,14 @@ function LineaPage({ lineId }) {
               </li>
             ))}
           </ul>
+
+          {!pricing && (
+            <div className="product-line__grid">
+              {images.map((image, i) => (
+                <MediaSlot key={i} image={image} className="product-slot" />
+              ))}
+            </div>
+          )}
 
           <LinePricing pricing={pricing} pricingNote={pricingNote} />
 
