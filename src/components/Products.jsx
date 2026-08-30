@@ -20,7 +20,7 @@ function Products() {
     <section className="products" id="productos" aria-label="productos">
       <div className="products__chooser">
         <h2 className="products__chooser-title">elige tu línea</h2>
-        <div className="products__chooser-grid">
+        <div className="products__chooser-grid" style={{ '--line-count': lines.length }}>
           {lines.map((line) => (
             <LineCard key={line.id} line={line} />
           ))}

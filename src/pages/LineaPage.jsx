@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { lines } from '../data/productLines'
 import MediaSlot from '../components/MediaSlot'
+import LinePricing from '../components/LinePricing'
 import Footer from '../components/Footer'
 
 function LineaPage({ lineId }) {
@@ -25,7 +26,7 @@ function LineaPage({ lineId }) {
 
   if (!line) return null
 
-  const { theme, id, accent, title, heading, description, images, items, helper, cta } = line
+  const { theme, id, accent, title, heading, description, images, items, helper, cta, pricing, pricingNote } = line
 
   return (
     <div className="linea-page">
@@ -33,11 +34,13 @@ function LineaPage({ lineId }) {
         <div className="product-line__inner">
           <h1 className="product-line__title">{heading ?? title}</h1>
           <p className="product-line__desc">{description}</p>
-          <div className="product-line__grid">
-            {images.map((image, i) => (
-              <MediaSlot key={i} image={image} className="product-slot" />
-            ))}
-          </div>
+          {!pricing && (
+            <div className="product-line__grid">
+              {images.map((image, i) => (
+                <MediaSlot key={i} image={image} className="product-slot" />
+              ))}
+            </div>
+          )}
           <ul className="product-line__list">
             {items.map((item) => (
               <li key={item}>
@@ -46,6 +49,8 @@ function LineaPage({ lineId }) {
               </li>
             ))}
           </ul>
+
+          <LinePricing pricing={pricing} pricingNote={pricingNote} />
 
           {cta && (
             <a className="product-line__cta" href={cta.href} target="_blank" rel="noopener noreferrer">

@@ -12,6 +12,7 @@ import Navbar from './components/Navbar'
 import PricingStrip from './components/PricingStrip'
 import Products from './components/Products'
 import TechNfc from './components/TechNfc'
+import WhatsappFloat from './components/WhatsappFloat'
 import LineaPage from './pages/LineaPage'
 
 function Home() {
@@ -52,6 +53,7 @@ function App() {
         <Route path="/llaveros" element={<LineaPage lineId="llaveros" />} />
         <Route path="/juguetes" element={<LineaPage lineId="personalizados" />} />
       </Routes>
+      <WhatsappFloat />
     </div>
   )
 }

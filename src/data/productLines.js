@@ -17,7 +17,123 @@ import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
 import keychainByd from '../assets/productos/marketing/keychain-byd.webp'
 import keychainBlack from '../assets/descripcion/black_kaychain.png'
 import keychainWhite from '../assets/descripcion/white_keychain_key.png'
+import precioLlaverosSimple from '../assets/precios/llaveros-simple.png'
+import precioLlaverosNfc from '../assets/precios/llaveros-nfc.png'
+import precioPinesSimple from '../assets/precios/pines-simple.png'
+import precioPinesNfc from '../assets/precios/pines-nfc.png'
+import precioTarjetaSimple from '../assets/precios/tarjeta-simple.png'
+import precioTarjetaSimpleNfc from '../assets/precios/tarjeta-simple-nfc.png'
+import precioTarjetaLanyard from '../assets/precios/tarjeta-lanyard.png'
+import precioTarjetaLanyardNfc from '../assets/precios/tarjeta-lanyard-nfc.png'
+import precioPortaCelularNfc from '../assets/precios/porta-celular-nfc.png'
 import { buildWhatsappLink } from './contact'
+
+const llaverosPricing = [
+  {
+    title: 'llaveros personalizados',
+    variants: [
+      {
+        label: 'llavero simple',
+        image: precioLlaverosSimple,
+        alt: 'Llavero simple personalizado impreso en 3D, precio desde $7.00',
+        tiers: [
+          { name: 'primero', price: '$7.00' },
+          { name: 'segundo en adelante', price: '$1.50 c/u' },
+        ],
+      },
+      {
+        label: 'llavero + tecnología nfc',
+        image: precioLlaverosNfc,
+        alt: 'Llavero personalizado con tecnología NFC y código QR, precio desde $10.00',
+        tiers: [
+          { name: 'primero', price: '$10.00' },
+          { name: 'segundo en adelante', price: '$2.50 c/u' },
+        ],
+      },
+    ],
+  },
+]
+
+const marketingPricing = [
+  {
+    title: 'pines personalizados',
+    variants: [
+      {
+        label: 'pin simple',
+        image: precioPinesSimple,
+        alt: 'Pin personalizado simple impreso en 3D, precio desde $7.00',
+        tiers: [
+          { name: 'primero', price: '$7.00' },
+          { name: 'segundo en adelante', price: '$1.50 c/u' },
+        ],
+      },
+      {
+        label: 'pin + tecnología nfc',
+        image: precioPinesNfc,
+        alt: 'Pin personalizado con tecnología NFC, precio desde $10.00',
+        tiers: [
+          { name: 'primero', price: '$10.00' },
+          { name: 'segundo en adelante', price: '$2.50 c/u' },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'tarjetas de presentación',
+    variants: [
+      {
+        label: 'simple',
+        image: precioTarjetaSimple,
+        alt: 'Tarjeta de presentación simple impresa en 3D, precio desde $10.00',
+        tiers: [
+          { name: 'primera', price: '$10.00' },
+          { name: 'segunda en adelante', price: '$4.00 c/u' },
+        ],
+      },
+      {
+        label: 'simple + nfc',
+        image: precioTarjetaSimpleNfc,
+        alt: 'Tarjeta de presentación con tecnología NFC, precio desde $12.00',
+        tiers: [
+          { name: 'primera', price: '$12.00' },
+          { name: 'segunda en adelante', price: '$5.00 c/u' },
+        ],
+      },
+      {
+        label: '+ lanyard',
+        image: precioTarjetaLanyard,
+        alt: 'Tarjeta de presentación con lanyard corporativo, precio desde $12.00',
+        tiers: [
+          { name: 'primera', price: '$12.00' },
+          { name: 'segunda en adelante', price: '$5.00 c/u' },
+        ],
+      },
+      {
+        label: '+ lanyard + nfc',
+        image: precioTarjetaLanyardNfc,
+        alt: 'Tarjeta de presentación con lanyard y tecnología NFC, precio desde $13.75',
+        tiers: [
+          { name: 'primera', price: '$13.75' },
+          { name: 'segunda en adelante', price: '$6.75 c/u' },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'porta celulares de escritorio + nfc',
+    variants: [
+      {
+        label: 'porta celular + nfc',
+        image: precioPortaCelularNfc,
+        alt: 'Porta celular de escritorio personalizado con tecnología NFC, precio desde $15.00',
+        tiers: [
+          { name: 'primero', price: '$15.00' },
+          { name: 'segundo en adelante', price: '$7.00 c/u' },
+        ],
+      },
+    ],
+  },
+]
 
 export const stats = [
   { value: 'pregunta por nuestras tarifas', label: 'para pedidos masivos o impresión 3D bajo demanda — con descuentos según el producto.' },
@@ -62,7 +178,7 @@ export const lines = [
     title: 'marketing',
     tagline: 'regalos corporativos y artículos con qr y nfc',
     description: 'regalos corporativos y artículos de marketing con tecnología qr y nfc — perfectos para llevar tu marca a otro nivel, con precios especiales al por mayor.',
-    cover: { srcs: [productKeychains, productBadges], alt: 'Llaveros y gafetes personalizados con QR y NFC' },
+    cover: { src: productBadges, alt: 'Gafetes con lanyard personalizados con QR y NFC' },
     images: [
       { src: productBadges, alt: 'Gafetes interactivos con QR y NFC' },
       { src: keychainByd, alt: 'Llavero BYD con patrón panal impreso en 3D' },
@@ -83,8 +199,9 @@ export const lines = [
       buttonLabel: 'cotizar llavero nfc →',
       href: buildWhatsappLink('Hola! Quiero cotizar llaveros personalizados con NFC para mi negocio.'),
     },
+    pricing: marketingPricing,
     metaTitle: 'línea marketing | regalos corporativos con qr y nfc — orquídea print',
-    metaDescription: 'llaveros personalizados, regalos corporativos y artículos de marketing con qr y nfc. precio al por mayor para empresas en quito, guayaquil y cuenca.',
+    metaDescription: 'pines, tarjetas de presentación y porta celulares con tecnología qr y nfc desde $7.00. regalos corporativos con precio al por mayor para empresas en quito, guayaquil y cuenca.',
   },
   {
     id: 'llaveros',
@@ -117,8 +234,9 @@ export const lines = [
       buttonLabel: 'cotizar llavero nfc →',
       href: buildWhatsappLink('Hola! Quiero cotizar llaveros personalizados en Quito.'),
     },
+    pricing: llaverosPricing,
     metaTitle: 'llaveros personalizados en quito y ecuador | qr y nfc — orquídea print',
-    metaDescription: 'llaveros personalizados impresos en 3d en quito con envíos a todo ecuador. llaveros con qr y nfc, para autos, marcas, empresas y regalos. cotiza gratis por whatsapp.',
+    metaDescription: 'llaveros personalizados desde $7.00, con qr y nfc desde $10.00. impresos en 3d en quito, con envíos a todo ecuador. para autos, marcas, empresas y regalos. cotiza gratis por whatsapp.',
   },
   {
     id: 'personalizados',
@@ -144,7 +262,8 @@ export const lines = [
       'prototipos y piezas mecánicas.',
     ],
     helper: 'si tienes un diseño propio o una sugerencia diferente, también lo hacemos.',
+    pricingNote: 'el precio de tus juguetes y figuras personalizadas varía según el tamaño, el tiempo de impresión y la cantidad de colores — cotiza tu diseño sin costo por whatsapp.',
     metaTitle: 'línea juguetes | figuras y coleccionables personalizados — orquídea print',
-    metaDescription: 'juguetes, figuras coleccionables, litofanías y prototipos impresos en 3d bajo demanda en quito, guayaquil y cuenca.',
+    metaDescription: 'juguetes, figuras coleccionables, litofanías y prototipos impresos en 3d bajo demanda en quito, guayaquil y cuenca. precio según tamaño, tiempo de impresión y colores — cotiza gratis.',
   },
 ]
