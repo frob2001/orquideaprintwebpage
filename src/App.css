@@ -897,13 +897,11 @@
 
 .pricing-variant__media {
   width: 100%;
-  aspect-ratio: 4 / 3;
 }
 
 .pricing-variant__media img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
