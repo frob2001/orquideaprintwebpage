@@ -485,6 +485,11 @@
   border-radius: 0;
 }
 
+/* la foto de llaveros de orquídea es vertical: bajar el encuadre para no cortar la flor de abajo */
+.line-card--llaveros .line-card__cover img {
+  object-position: center 72%;
+}
+
 .line-card__body {
   display: flex;
   flex-direction: column;

@@ -4,7 +4,7 @@ import MediaSlot from './MediaSlot'
 
 function LineCard({ line }) {
   return (
-    <Link to={line.path} className={`line-card line-card--${line.theme}`} style={{ '--line-accent': line.accent }}>
+    <Link to={line.path} className={`line-card line-card--${line.theme} line-card--${line.id}`} style={{ '--line-accent': line.accent }}>
       <MediaSlot image={line.cover ?? line.images[0]} className="line-card__cover" />
       <div className="line-card__body">
         <h3 className="line-card__title">{line.title}</h3>
