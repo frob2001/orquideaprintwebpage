@@ -15,6 +15,8 @@ import juguetesR5 from '../assets/productos/juguetes/r5-turbo.webp'
 import juguetesKonbini from '../assets/productos/juguetes/konbini.webp'
 import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
 import keychainByd from '../assets/productos/marketing/keychain-byd.webp'
+import keychainSocial from '../assets/productos/llaveros/social-keychains.webp'
+import keychainWorldcup from '../assets/productos/llaveros/worldcup-keychain.webp'
 import keychainBlack from '../assets/descripcion/black_kaychain.png'
 import keychainWhite from '../assets/descripcion/white_keychain_key.png'
 import precioLlaverosSimple from '../assets/precios/llaveros-simple.webp'
@@ -212,10 +214,11 @@ export const lines = [
     title: 'llaveros',
     tagline: 'llaveros personalizados con qr y nfc en quito',
     description: 'llaveros personalizados impresos en 3d en quito, con envíos a todo ecuador — con tu nombre, tu logo, tu marca favorita o tecnología qr y nfc. ideales para regalos, autos, empresas y colecciones, con precios especiales al por mayor.',
-    cover: { srcs: [productKeychains, keychainByd, keychainBlack], alt: 'Llaveros personalizados impresos en 3D en Quito' },
+    cover: { srcs: [keychainSocial, keychainWorldcup, productKeychains], alt: 'Llaveros personalizados impresos en 3D en Quito' },
     images: [
+      { src: keychainSocial, alt: 'Llaveros de logos de redes sociales y apps impresos en 3D' },
+      { src: keychainWorldcup, alt: 'Llavero de la copa del mundo impreso en 3D' },
       { src: productKeychains, alt: 'Llaveros personalizados con QR y NFC en Quito' },
-      { src: keychainByd, alt: 'Llavero BYD con patrón panal impreso en 3D' },
       { src: keychainBlack, alt: 'Llavero negro personalizado impreso en 3D' },
       { src: keychainWhite, alt: 'Llavero blanco con forma de llave impreso en 3D' },
       { src: productPins, alt: 'Pines y llaveros con logotipo' },
