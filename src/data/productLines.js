@@ -223,7 +223,7 @@ export const lines = [
     items: [
       'llaveros personalizados con tu nombre, logo o diseño.',
       'llaveros con código qr y chip nfc: comparte tu contacto o redes con un toque.',
-      'llaveros de autos, marcas y colecciones (byd, mitsubishi y más).',
+      'llaveros de autos, marcas y colecciones.',
       'llaveros corporativos y promocionales al por mayor.',
       'entregas en quito y envíos a todo ecuador.',
     ],
