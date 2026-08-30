@@ -191,6 +191,7 @@ export const lines = [
       'porta celulares de escritorio con qr/nfc.',
       'gafetes interactivos para eventos.',
       'precio al por mayor para pedidos de empresas.',
+      'entregas en quito y envíos a todo ecuador.',
     ],
     helper: '¿tu negocio necesita otra idea? cuéntanosla y la fabricamos.',
     cta: {
@@ -259,6 +260,7 @@ export const lines = [
       'figuras coleccionables (cine, series, anime, videojuegos).',
       'litofanías (fotos impresas en 3d que revelan luz).',
       'prototipos y piezas mecánicas.',
+      'entregas en quito y envíos a todo ecuador.',
     ],
     helper: 'si tienes un diseño propio o una sugerencia diferente, también lo hacemos.',
     pricingNote: 'el precio de tus juguetes y figuras personalizadas varía según el tamaño, el tiempo de impresión y la cantidad de colores — cotiza tu diseño sin costo por whatsapp.',
