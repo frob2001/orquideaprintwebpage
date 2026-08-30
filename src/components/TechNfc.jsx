@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import logo from '../assets/inicio/logo.png'
-import nfcImage from '../assets/nfc.png'
+import nfcImage from '../assets/nfc.webp'
 
 function ChipIcon() {
   return (
