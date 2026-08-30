@@ -84,7 +84,7 @@ const marketingPricing = [
     title: 'tarjetas de presentación',
     variants: [
       {
-        label: 'simple',
+        label: 'tarjeta de presentación simple',
         image: precioTarjetaSimple,
         alt: 'Tarjeta de presentación simple impresa en 3D, precio desde $10.00',
         tiers: [
@@ -93,7 +93,7 @@ const marketingPricing = [
         ],
       },
       {
-        label: 'simple + nfc',
+        label: 'tarjeta de presentación simple + nfc',
         image: precioTarjetaSimpleNfc,
         alt: 'Tarjeta de presentación con tecnología NFC, precio desde $12.00',
         tiers: [
@@ -102,7 +102,7 @@ const marketingPricing = [
         ],
       },
       {
-        label: '+ lanyard',
+        label: 'tarjeta de presentación + lanyard',
         image: precioTarjetaLanyard,
         alt: 'Tarjeta de presentación con lanyard corporativo, precio desde $12.00',
         tiers: [
@@ -111,7 +111,7 @@ const marketingPricing = [
         ],
       },
       {
-        label: '+ lanyard + nfc',
+        label: 'tarjeta de presentación + lanyard + nfc',
         image: precioTarjetaLanyardNfc,
         alt: 'Tarjeta de presentación con lanyard y tecnología NFC, precio desde $13.75',
         tiers: [
