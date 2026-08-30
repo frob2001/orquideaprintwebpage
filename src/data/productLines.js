@@ -209,7 +209,6 @@ export const lines = [
     theme: 'light',
     accent: '#b81d6f',
     title: 'llaveros',
-    heading: 'llaveros personalizados en Quito y Ecuador',
     tagline: 'llaveros personalizados con qr y nfc en quito',
     description: 'llaveros personalizados impresos en 3d en quito, con envíos a todo ecuador — con tu nombre, tu logo, tu marca favorita o tecnología qr y nfc. ideales para regalos, autos, empresas y colecciones, con precios especiales al por mayor.',
     cover: { srcs: [productKeychains, keychainByd, keychainBlack], alt: 'Llaveros personalizados impresos en 3D en Quito' },
