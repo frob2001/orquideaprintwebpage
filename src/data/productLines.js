@@ -1,24 +1,11 @@
 import productBadges from '../assets/productos/gafete.webp'
 import productKeychains from '../assets/productos/llaveros.webp'
 import productPins from '../assets/productos/pines.webp'
-import hogarCathouse1 from '../assets/productos/hogar/cathouse/1.webp'
-import hogarCathouse2 from '../assets/productos/hogar/cathouse/2.webp'
-import hogarOrganizador1 from '../assets/productos/hogar/organizador/1.webp'
-import hogarOrganizador2 from '../assets/productos/hogar/organizador/2.webp'
-import hogarPortavasos1 from '../assets/productos/hogar/portavasos/1.webp'
-import hogarPortavasos2 from '../assets/productos/hogar/portavasos/2.webp'
-import hogarPortavasos3 from '../assets/productos/hogar/portavasos/3.webp'
 import hogarVaciabolsillos from '../assets/productos/hogar/vaciabolsillos.webp'
 import hogarJarron from '../assets/productos/hogar/jarron-espiral.webp'
 import hogarFrutero from '../assets/productos/hogar/frutero.webp'
 import hogarPortarrollos from '../assets/productos/hogar/portarrollos-lego.webp'
 import hogarPosavasosSet from '../assets/productos/hogar/posavasos-set.webp'
-import juguetesSkeleton from '../assets/productos/juguetes/skeleton.webp'
-import juguetesEevee from '../assets/productos/juguetes/eevee.webp'
-import juguetesRooster from '../assets/productos/juguetes/rooster.webp'
-import juguetesR5 from '../assets/productos/juguetes/r5-turbo.webp'
-import juguetesKonbini from '../assets/productos/juguetes/konbini.webp'
-import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
 import juguetesAjedrez from '../assets/productos/juguetes/ajedrez.webp'
 import juguetesDomino from '../assets/productos/juguetes/domino.webp'
 import juguetesSnorlax from '../assets/productos/juguetes/snorlax.webp'
@@ -165,11 +152,8 @@ export const lines = [
     tagline: 'organizadores, adornos y placas para mascotas',
     description: 'organizadores, adornos y placas de identificación para mascotas — piezas que le dan orden y personalidad a tu casa.',
     images: [
-      { srcs: [hogarCathouse1, hogarCathouse2], alt: 'Casa para gato impresa en 3D' },
-      { srcs: [hogarOrganizador1, hogarOrganizador2], alt: 'Organizador de baño impreso en 3D' },
-      { srcs: [hogarPortavasos1, hogarPortavasos2, hogarPortavasos3], alt: 'Portavasos con forma de hoja impresos en 3D' },
-      { src: hogarVaciabolsillos, alt: 'Bandeja vaciabolsillos para llaves, monedas y audífonos impresa en 3D' },
       { src: hogarJarron, alt: 'Jarrón decorativo espiral impreso en 3D' },
+      { src: hogarVaciabolsillos, alt: 'Bandeja vaciabolsillos para llaves, monedas y audífonos impresa en 3D' },
       { src: hogarFrutero, alt: 'Frutero de alambre decorativo impreso en 3D' },
       { src: hogarPortarrollos, alt: 'Portarrollos de papel higiénico tipo LEGO impreso en 3D' },
       { src: hogarPosavasosSet, alt: 'Set de posavasos con soporte impresos en 3D' },
@@ -260,14 +244,8 @@ export const lines = [
     title: 'juguetes',
     tagline: 'figuras, coleccionables y prototipos únicos',
     description: 'juguetes, figuras y proyectos que cobran vida — desde coleccionables hasta prototipos únicos, impresos bajo demanda para ti.',
-    cover: { srcs: [juguetesSkeleton, juguetesR5, juguetesKonbini, juguetesEevee, juguetesHungary], alt: 'Figuras y coleccionables impresos en 3D' },
+    cover: { srcs: [juguetesSpiderman, juguetesSnorlax, juguetesCaldero, juguetesAjedrez], alt: 'Figuras y coleccionables impresos en 3D' },
     images: [
-      { src: juguetesSkeleton, alt: 'Figura articulada de esqueleto tipo LEGO impresa en 3D' },
-      { src: juguetesEevee, alt: 'Figura coleccionable de Eevee impresa en 3D' },
-      { src: juguetesRooster, alt: 'Figura de gallo Heihei impresa en 3D' },
-      { src: juguetesR5, alt: 'Maqueta del Renault 5 Turbo 2 impresa en 3D' },
-      { src: juguetesKonbini, alt: 'Diorama de tienda japonesa konbini impreso en 3D' },
-      { src: juguetesHungary, alt: 'Cuadro del circuito del Gran Premio de Hungría impreso en 3D' },
       { src: juguetesAjedrez, alt: 'Juego de ajedrez minimalista impreso en 3D' },
       { src: juguetesDomino, alt: 'Fichas de dominó impresas en 3D' },
       { src: juguetesSnorlax, alt: 'Figura coleccionable de Snorlax impresa en 3D' },
