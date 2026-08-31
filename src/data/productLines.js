@@ -22,6 +22,7 @@ import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
 import juguetesAjedrez from '../assets/productos/juguetes/ajedrez.webp'
 import juguetesDomino from '../assets/productos/juguetes/domino.webp'
 import juguetesSnorlax from '../assets/productos/juguetes/snorlax.webp'
+import juguetesSpiderman from '../assets/productos/juguetes/spiderman-lego.webp'
 import keychainByd from '../assets/productos/marketing/keychain-byd.webp'
 import keychainOrquidea from '../assets/productos/llaveros/orquidea-keychains.webp'
 import keychainPmv from '../assets/productos/llaveros/pmv-keychains.webp'
@@ -269,6 +270,7 @@ export const lines = [
       { src: juguetesAjedrez, alt: 'Juego de ajedrez minimalista impreso en 3D' },
       { src: juguetesDomino, alt: 'Fichas de dominó impresas en 3D' },
       { src: juguetesSnorlax, alt: 'Figura coleccionable de Snorlax impresa en 3D' },
+      { src: juguetesSpiderman, alt: 'Figura gigante de Spider-Man estilo LEGO impresa en 3D' },
     ],
     items: [
       'juguetes y figuras personalizadas.',
