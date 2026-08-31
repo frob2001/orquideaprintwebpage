@@ -495,6 +495,11 @@
   object-position: center 60%;
 }
 
+/* hogar: la última foto (jarrón en la sala) queda muy abajo, subirla un poco más */
+.line-card--hogar .line-card__cover img:last-child {
+  object-position: center 40%;
+}
+
 .line-card__body {
   display: flex;
   flex-direction: column;
