@@ -9,6 +9,7 @@ import hogarPortavasos1 from '../assets/productos/hogar/portavasos/1.webp'
 import hogarPortavasos2 from '../assets/productos/hogar/portavasos/2.webp'
 import hogarPortavasos3 from '../assets/productos/hogar/portavasos/3.webp'
 import hogarVaciabolsillos from '../assets/productos/hogar/vaciabolsillos.webp'
+import hogarJarron from '../assets/productos/hogar/jarron-espiral.webp'
 import juguetesSkeleton from '../assets/productos/juguetes/skeleton.webp'
 import juguetesEevee from '../assets/productos/juguetes/eevee.webp'
 import juguetesRooster from '../assets/productos/juguetes/rooster.webp'
@@ -160,6 +161,7 @@ export const lines = [
       { srcs: [hogarOrganizador1, hogarOrganizador2], alt: 'Organizador de baño impreso en 3D' },
       { srcs: [hogarPortavasos1, hogarPortavasos2, hogarPortavasos3], alt: 'Portavasos con forma de hoja impresos en 3D' },
       { src: hogarVaciabolsillos, alt: 'Bandeja vaciabolsillos para llaves, monedas y audífonos impresa en 3D' },
+      { src: hogarJarron, alt: 'Jarrón decorativo espiral impreso en 3D' },
     ],
     items: [
       'placas de identificación para mascotas.',
