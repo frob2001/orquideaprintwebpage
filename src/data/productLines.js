@@ -19,6 +19,7 @@ import juguetesRooster from '../assets/productos/juguetes/rooster.webp'
 import juguetesR5 from '../assets/productos/juguetes/r5-turbo.webp'
 import juguetesKonbini from '../assets/productos/juguetes/konbini.webp'
 import juguetesHungary from '../assets/productos/juguetes/hungarian-gp.webp'
+import juguetesAjedrez from '../assets/productos/juguetes/ajedrez.webp'
 import keychainByd from '../assets/productos/marketing/keychain-byd.webp'
 import keychainOrquidea from '../assets/productos/llaveros/orquidea-keychains.webp'
 import keychainPmv from '../assets/productos/llaveros/pmv-keychains.webp'
@@ -263,6 +264,7 @@ export const lines = [
       { src: juguetesR5, alt: 'Maqueta del Renault 5 Turbo 2 impresa en 3D' },
       { src: juguetesKonbini, alt: 'Diorama de tienda japonesa konbini impreso en 3D' },
       { src: juguetesHungary, alt: 'Cuadro del circuito del Gran Premio de Hungría impreso en 3D' },
+      { src: juguetesAjedrez, alt: 'Juego de ajedrez minimalista impreso en 3D' },
     ],
     items: [
       'juguetes y figuras personalizadas.',
