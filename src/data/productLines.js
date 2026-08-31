@@ -151,6 +151,7 @@ export const lines = [
     title: 'hogar',
     tagline: 'organizadores, adornos y placas para mascotas',
     description: 'organizadores, adornos y placas de identificación para mascotas — piezas que le dan orden y personalidad a tu casa.',
+    cover: { srcs: [hogarFrutero, hogarVaciabolsillos, hogarPosavasosSet, hogarPortarrollos, hogarJarron], alt: 'Adornos y organizadores para el hogar impresos en 3D' },
     images: [
       { src: hogarJarron, alt: 'Jarrón decorativo espiral impreso en 3D' },
       { src: hogarVaciabolsillos, alt: 'Bandeja vaciabolsillos para llaves, monedas y audífonos impresa en 3D' },

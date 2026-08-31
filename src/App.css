@@ -490,6 +490,11 @@
   object-position: center 72%;
 }
 
+/* hogar: subir el encuadre para centrar mejor los productos (el jarrón se veía muy abajo) */
+.line-card--hogar .line-card__cover img {
+  object-position: center 60%;
+}
+
 .line-card__body {
   display: flex;
   flex-direction: column;
