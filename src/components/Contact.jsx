@@ -56,7 +56,7 @@ const channels = [
   {
     id: 'linkedin',
     label: 'LinkedIn',
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/company/orqu%C3%ADdea-print/',
     Icon: LinkedinIcon,
   },
 ]
