@@ -50,7 +50,7 @@ const channels = [
   {
     id: 'instagram',
     label: 'Instagram',
-    href: 'https://instagram.com',
+    href: 'https://www.instagram.com/orquideaprint/',
     Icon: InstagramIcon,
   },
   {

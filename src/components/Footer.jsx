@@ -9,7 +9,7 @@ const waHref = buildWhatsappLink('Hola! Quiero más información sobre orquídea
 
 const socialLinks = [
   { id: 'whatsapp', label: 'WhatsApp', href: waHref, Icon: FaWhatsapp },
-  { id: 'instagram', label: 'Instagram', href: 'https://instagram.com', Icon: FaInstagram },
+  { id: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/orquideaprint/', Icon: FaInstagram },
   { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/orqu%C3%ADdea-print/', Icon: FaLinkedin },
 ]
 
