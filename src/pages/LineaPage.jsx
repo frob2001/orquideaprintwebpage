@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { lines } from '../data/productLines'
+import { trackContact } from '../data/track'
 import MediaSlot from '../components/MediaSlot'
 import LinePricing from '../components/LinePricing'
 import Footer from '../components/Footer'
@@ -54,7 +55,7 @@ function LineaPage({ lineId }) {
           <LinePricing pricing={pricing} pricingNote={pricingNote} />
 
           {cta && (
-            <a className="product-line__cta" href={cta.href} target="_blank" rel="noopener noreferrer">
+            <a className="product-line__cta" href={cta.href} target="_blank" rel="noopener noreferrer" onClick={() => trackContact('whatsapp', `cta-${id}`)}>
               <span className="product-line__cta-title">{cta.title}</span>
               <span className="product-line__cta-text">{cta.text}</span>
               <span className="product-line__cta-button">{cta.buttonLabel}</span>

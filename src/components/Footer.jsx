@@ -3,6 +3,7 @@ import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa6'
 import logo from '../assets/inicio/logo.png'
 import { lines } from '../data/productLines'
 import { buildWhatsappLink } from '../data/contact'
+import { trackContact } from '../data/track'
 
 const waHref = buildWhatsappLink('Hola! Quiero más información sobre orquídea print.')
 
@@ -33,7 +34,7 @@ function Footer() {
             <ul className="footer__social">
               {socialLinks.map((social) => (
                 <li key={social.id}>
-                  <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
+                  <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label} onClick={() => trackContact(social.id, 'footer-social')}>
                     <social.Icon aria-hidden="true" />
                   </a>
                 </li>
@@ -57,7 +58,7 @@ function Footer() {
             <ul>
               {socialLinks.map(({ id, label, href }) => (
                 <li key={id}>
-                  <a href={href} target="_blank" rel="noopener noreferrer">{label.toLowerCase()}</a>
+                  <a href={href} target="_blank" rel="noopener noreferrer" onClick={() => trackContact(id, 'footer-contacto')}>{label.toLowerCase()}</a>
                 </li>
               ))}
             </ul>

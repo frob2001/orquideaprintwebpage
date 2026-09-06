@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { buildWhatsappLink } from '../data/contact'
+import { trackContact } from '../data/track'
 import imgMakerWorld from '../assets/paginas/makerworld.png'
 import imgPrintables from '../assets/paginas/printables.png'
 import imgThingiverse from '../assets/paginas/thingiverse.png'
@@ -25,6 +26,7 @@ function PlatformModal({ platform, onClose }) {
   const handleSend = (e) => {
     e.preventDefault()
     if (!link.trim()) return
+    trackContact('whatsapp', `inspiration-${platform.id}`)
     window.open(buildWhatsappLink(`Hola! Me interesa que me coticen este modelo: ${link.trim()}`), '_blank', 'noopener')
     setSent(true)
     setLink('')

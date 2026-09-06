@@ -1,4 +1,5 @@
 import { buildWhatsappLink } from '../data/contact'
+import { trackContact } from '../data/track'
 
 function WhatsappIcon() {
   return (
@@ -73,7 +74,7 @@ function Contact() {
         <ul className="contact__channels">
           {channels.map((channel) => (
             <li key={channel.id}>
-              <a className="channel-card" href={channel.href} target="_blank" rel="noopener noreferrer" aria-label={channel.label}>
+              <a className="channel-card" href={channel.href} target="_blank" rel="noopener noreferrer" aria-label={channel.label} onClick={() => trackContact(channel.id, 'seccion-contacto')}>
                 <channel.Icon />
                 <span>{channel.label.toLowerCase()}</span>
               </a>
