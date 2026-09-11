@@ -44,7 +44,7 @@ const channels = [
   {
     id: 'whatsapp',
     label: 'WhatsApp',
-    href: buildWhatsappLink('Hola! Quiero más información sobre orquídea print.'),
+    href: buildWhatsappLink('¡Hola! Quiero más información sobre orquídea print.'),
     Icon: WhatsappIcon,
   },
   {

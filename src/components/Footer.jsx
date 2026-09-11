@@ -5,7 +5,7 @@ import { lines } from '../data/productLines'
 import { buildWhatsappLink } from '../data/contact'
 import { trackContact } from '../data/track'
 
-const waHref = buildWhatsappLink('Hola! Quiero más información sobre orquídea print.')
+const waHref = buildWhatsappLink('¡Hola! Quiero más información sobre orquídea print.')
 
 const socialLinks = [
   { id: 'whatsapp', label: 'WhatsApp', href: waHref, Icon: FaWhatsapp },

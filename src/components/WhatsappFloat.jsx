@@ -6,7 +6,7 @@ function WhatsappFloat() {
   return (
     <a
       className="whatsapp-float"
-      href={buildWhatsappLink('Hola! Quiero más información sobre orquídea print.')}
+      href={buildWhatsappLink('¡Hola! Quiero más información sobre orquídea print.')}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escríbenos por WhatsApp"

@@ -27,7 +27,7 @@ function PlatformModal({ platform, onClose }) {
     e.preventDefault()
     if (!link.trim()) return
     trackContact('whatsapp', `inspiration-${platform.id}`)
-    window.open(buildWhatsappLink(`Hola! Me interesa que me coticen este modelo: ${link.trim()}`), '_blank', 'noopener')
+    window.open(buildWhatsappLink(`¡Hola! Me interesa que me coticen este modelo: ${link.trim()}`), '_blank', 'noopener')
     setSent(true)
     setLink('')
     setTimeout(() => setSent(false), 3000)
@@ -70,7 +70,7 @@ function PlatformModal({ platform, onClose }) {
             ¿te interesó algo?
           </p>
           <p className="platform-modal__quote-sub">
-            envíanos el link que quieres que te cotizemos e imprimamos
+            envíanos el link que quieres que te coticemos e imprimamos
           </p>
           <form className="platform-modal__form" onSubmit={handleSend}>
             <input
