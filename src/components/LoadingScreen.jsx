@@ -28,7 +28,7 @@ function LoadingScreen({ onDone }) {
 
   return (
     <div className={`loading-screen${hiding ? ' loading-screen--out' : ''}`}>
-      <img className="loading-screen__logo" src={logo} alt="Orquidea Print" />
+      <img className="loading-screen__logo" src={logo} alt="Orquídea Print" />
     </div>
   )
 }

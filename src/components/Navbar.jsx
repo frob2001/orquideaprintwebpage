@@ -9,8 +9,8 @@ function Navbar() {
   return (
     <header className={`navbar ${isOpen ? 'navbar--open' : ''}`}>
       <Link className="navbar__brand" to="/" onClick={closeMenu}>
-        <img src={navbarLogo} alt="Logo de orquidea print" />
-        <span>orquidea print</span>
+        <img src={navbarLogo} alt="Logo de orquídea print" />
+        <span>orquídea print</span>
       </Link>
       <button
         className={`navbar__toggle ${isOpen ? 'navbar__toggle--open' : ''}`}
