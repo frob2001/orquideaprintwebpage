@@ -2315,6 +2315,16 @@
   margin: 0;
 }
 
+.footer__legal a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.footer__legal a:hover {
+  color: #ffffff;
+}
+
 @media (max-width: 900px) {
   .footer__top {
     grid-template-columns: 1fr 1fr;

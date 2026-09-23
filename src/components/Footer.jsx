@@ -67,6 +67,9 @@ function Footer() {
 
         <div className="footer__bottom">
           <p>© {year} orquídea print. todos los derechos reservados.</p>
+          <p className="footer__legal">
+            <Link to="/privacidad">política de privacidad</Link>
+          </p>
           <p className="footer__tag">hecho con pla de origen vegetal.</p>
         </div>
       </div>

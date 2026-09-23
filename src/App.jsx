@@ -14,6 +14,7 @@ import Products from './components/Products'
 import TechNfc from './components/TechNfc'
 import WhatsappFloat from './components/WhatsappFloat'
 import LineaPage from './pages/LineaPage'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function Home() {
   const location = useLocation()
@@ -52,6 +53,7 @@ function App() {
         <Route path="/marketing" element={<LineaPage lineId="negocios" />} />
         <Route path="/llaveros" element={<LineaPage lineId="llaveros" />} />
         <Route path="/juguetes" element={<LineaPage lineId="personalizados" />} />
+        <Route path="/privacidad" element={<PrivacyPolicy />} />
       </Routes>
       <WhatsappFloat />
     </div>
