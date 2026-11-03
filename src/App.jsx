@@ -6,6 +6,7 @@ import Description from './components/Description'
 import Ecofriendly from './components/Ecofriendly'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
+import HolidayBanner from './components/HolidayBanner'
 import Inspiration from './components/Inspiration'
 import LoadingScreen from './components/LoadingScreen'
 import Navbar from './components/Navbar'
@@ -42,10 +43,15 @@ function Home() {
 
 function App() {
   const [loading, setLoading] = useState(true)
+  const [bannerHeight, setBannerHeight] = useState(0)
 
   return (
-    <div className="app">
+    <div
+      className={`app ${bannerHeight > 0 ? 'app--with-banner' : ''}`}
+      style={{ '--banner-h': `${bannerHeight}px` }}
+    >
       {loading && <LoadingScreen onDone={() => setLoading(false)} />}
+      <HolidayBanner onHeightChange={setBannerHeight} />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

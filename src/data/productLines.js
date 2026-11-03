@@ -178,8 +178,8 @@ export const lines = [
     theme: 'light',
     accent: '#93215d',
     title: 'marketing',
-    tagline: 'regalos corporativos y artículos con qr y nfc',
-    description: 'regalos corporativos y artículos de marketing con tecnología qr y nfc — perfectos para llevar tu marca a otro nivel, con precios especiales al por mayor.',
+    tagline: 'regalos para empresas y artículos corporativos con qr y nfc',
+    description: 'regalos para empresas y artículos corporativos con tecnología qr y nfc — perfectos para llevar tu marca a otro nivel, con precios especiales al por mayor.',
     cover: { src: productBadges, alt: 'Gafetes con lanyard personalizados con QR y NFC' },
     images: [
       { src: productBadges, alt: 'Gafetes interactivos con QR y NFC' },
@@ -189,7 +189,7 @@ export const lines = [
     ],
     items: [
       'llaveros personalizados con tu logotipo.',
-      'regalos corporativos y artículos promocionales.',
+      'regalos para empresas y artículos promocionales corporativos.',
       'porta celulares de escritorio con qr/nfc.',
       'gafetes interactivos para eventos.',
       'precio al por mayor para pedidos de empresas.',
@@ -203,8 +203,8 @@ export const lines = [
       href: buildWhatsappLink('¡Hola! Quiero cotizar llaveros personalizados con NFC para mi negocio.'),
     },
     pricing: marketingPricing,
-    metaTitle: 'línea marketing | regalos corporativos con qr y nfc — orquídea print',
-    metaDescription: 'pines, tarjetas de presentación y porta celulares con tecnología qr y nfc desde $7.00. regalos corporativos con precio al por mayor para empresas en quito, guayaquil y cuenca.',
+    metaTitle: 'línea marketing | regalos para empresas y corporativos con qr y nfc — orquídea print',
+    metaDescription: 'regalos para empresas y regalos corporativos: pines, tarjetas de presentación y porta celulares con tecnología qr y nfc desde $7.00, precio al por mayor, en quito, guayaquil y cuenca.',
   },
   {
     id: 'llaveros',

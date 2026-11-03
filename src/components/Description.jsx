@@ -45,7 +45,7 @@ function Description() {
             en <strong>orqu&iacute;dea print</strong> convertimos tus ideas en objetos reales.
           </p>
           <p className="description__copy">
-            creamos desde <strong>figuras, juguetes y utensilios</strong> hasta productos empresariales como{' '}
+            creamos desde <strong>figuras, juguetes y utensilios</strong> hasta <strong>regalos para empresas</strong> como{' '}
             <strong>llaveros, pines, se&ntilde;al&eacute;ticas y tarjetas de presentaci&oacute;n</strong>,
             totalmente personalizadas y con la opci&oacute;n de integrar <strong>tecnolog&iacute;a nfc</strong>.
           </p>
