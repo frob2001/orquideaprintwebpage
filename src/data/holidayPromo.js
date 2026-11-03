@@ -3,6 +3,6 @@ export function isHolidayPromoActive(date = new Date()) {
   return month === 10 || month === 11 // noviembre y diciembre
 }
 
-export function getHolidayBannerStorageKey(date = new Date()) {
-  return `orquideaprint-holiday-banner-dismissed-${date.getFullYear()}`
+export function getHolidayPromoStorageKey(date = new Date()) {
+  return `orquideaprint-holiday-modal-dismissed-${date.getFullYear()}`
 }

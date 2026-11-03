@@ -1,11 +1,8 @@
 import { useEffect, useRef } from 'react'
 import heroVideo from '../assets/inicio/inicio.mp4'
-import { buildWhatsappLink } from '../data/contact'
-import { isHolidayPromoActive } from '../data/holidayPromo'
 
 function Hero() {
   const videoRef = useRef(null)
-  const showHolidayPromo = isHolidayPromoActive()
 
   useEffect(() => {
     const v = videoRef.current
@@ -71,25 +68,6 @@ function Hero() {
           damos <br /> forma a <br /> tu imaginación
         </p>
       </div>
-
-      {showHolidayPromo && (
-        <div className="hero__holiday-promo">
-          <div className="hero__holiday-promo-card">
-            <p className="hero__holiday-promo-text">
-              🎄 <strong>juguetes personalizados</strong> y <strong>regalos de navidad para tu empresa</strong>,
-              impresos en 3d.
-            </p>
-            <a
-              className="hero__holiday-promo-cta"
-              href={buildWhatsappLink('Hola! Quiero cotizar juguetes personalizados o regalos de navidad para mi empresa.')}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              cotiza tu regalo →
-            </a>
-          </div>
-        </div>
-      )}
     </section>
   )
 }

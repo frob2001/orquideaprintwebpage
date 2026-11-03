@@ -2397,163 +2397,100 @@
   }
 }
 
-/* ── banner temporal de navidad ── */
+/* ── anuncio modal temporal de navidad ── */
 
-.holiday-banner {
+.holiday-modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 25;
+  inset: 0;
+  z-index: 200;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  padding: 0.6rem 3rem;
-  background: linear-gradient(135deg, #93215d 0%, #d52574 100%);
-  color: #ffffff;
+  padding: 1.5rem;
+  background: rgba(15, 15, 15, 0.65);
+  backdrop-filter: blur(3px);
+}
+
+.holiday-modal {
+  position: relative;
+  width: min(440px, 100%);
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  padding: 2.4rem 2rem 2rem;
+  border-radius: 24px;
+  background: #ffffff;
+  color: #0f0f0f;
   text-align: center;
-  font-size: 0.85rem;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
 }
 
-.holiday-banner__text {
-  margin: 0;
-}
-
-.holiday-banner__cta {
-  flex-shrink: 0;
-  padding: 0.35rem 0.9rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 180ms ease;
-}
-
-.holiday-banner__cta:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.holiday-banner__close {
+.holiday-modal__close {
   position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: none;
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  font-size: 1rem;
+  background: #f5f5f5;
+  color: #0f0f0f;
+  font-size: 1.2rem;
   line-height: 1;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 180ms ease;
 }
 
-.holiday-banner__close:hover {
-  background: rgba(255, 255, 255, 0.3);
+.holiday-modal__close:hover {
+  background: #ebebeb;
 }
 
-@media (max-width: 600px) {
-  .holiday-banner {
-    padding: 0.65rem 2.75rem;
-    font-size: 0.78rem;
-    gap: 0.5rem;
-  }
-
-  .holiday-banner__cta {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.75rem;
-  }
-
-  .holiday-banner__close {
-    right: 0.6rem;
-    width: 24px;
-    height: 24px;
-    font-size: 0.9rem;
-  }
+.holiday-modal__eyebrow {
+  margin: 0 0 0.5rem;
+  color: #a02168;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
 }
 
-/* bloque promocional de navidad dentro del hero (solo inicio, no cerrable) */
-.hero__holiday-promo {
-  width: min(1100px, 100%);
-  margin: 1.5rem auto 0;
-  display: flex;
-  justify-content: flex-start;
+.holiday-modal__title {
+  margin: 0 0 0.75rem;
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
 }
 
-.hero__holiday-promo-card {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-  max-width: min(640px, 100%);
-  padding: 1rem 1.25rem;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(6px);
-}
-
-.hero__holiday-promo-text {
-  margin: 0;
-  color: #ffffff;
+.holiday-modal__text {
+  margin: 0 0 1.5rem;
+  color: #5c4551;
   font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-.hero__holiday-promo-cta {
-  flex-shrink: 0;
-  padding: 0.5rem 1.1rem;
+.holiday-modal__cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
   border-radius: 999px;
-  background: #d52574;
+  background: #a02168;
   color: #ffffff;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 180ms ease, transform 180ms ease;
+  transition: background-color 180ms ease;
 }
 
-.hero__holiday-promo-cta:hover {
-  background: #b81d6f;
-}
-
-@media (max-width: 600px) {
-  .hero__holiday-promo-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.85rem 1rem;
-  }
-
-  .hero__holiday-promo-text {
-    font-size: 0.85rem;
-  }
-}
-
-/* offset coordinado para navbar/hero/linea-page cuando el banner está visible */
-/* gateado por .app--with-banner: no toca ninguna regla existente de .navbar/.hero/.linea-page */
-.app--with-banner .navbar {
-  top: calc(1rem + var(--banner-h, 0px));
-}
-
-.app--with-banner .hero {
-  padding-top: calc(7rem + var(--banner-h, 0px));
-}
-
-.app--with-banner .linea-page {
-  padding-top: calc(3.5rem + var(--banner-h, 0px));
+.holiday-modal__cta:hover {
+  background: #93215d;
 }
 
 @media (max-width: 600px) {
-  .app--with-banner .hero {
-    padding-top: calc(6.6rem + var(--banner-h, 0px));
+  .holiday-modal {
+    padding: 2.2rem 1.5rem 1.75rem;
+  }
+
+  .holiday-modal__title {
+    font-size: 1.25rem;
   }
 }
