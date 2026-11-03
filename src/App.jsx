@@ -6,7 +6,6 @@ import Description from './components/Description'
 import Ecofriendly from './components/Ecofriendly'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
-import HolidayModal from './components/HolidayModal'
 import Inspiration from './components/Inspiration'
 import LoadingScreen from './components/LoadingScreen'
 import Navbar from './components/Navbar'
@@ -47,7 +46,6 @@ function App() {
   return (
     <div className="app">
       {loading && <LoadingScreen onDone={() => setLoading(false)} />}
-      {!loading && <HolidayModal />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
